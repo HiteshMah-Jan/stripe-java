@@ -14,6 +14,22 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
+     * @return
+     */
+    List<User2> search( Integer workId, Integer phone,
+                       Integer name, Integer salary, String username);
+    /**
+     * 删除用户
+     * @return
+
+
+@Override
+    public List<User2> search(Integer workId, Integer phone, Integer name, Integer salary,String username) {
+
+        return user2ao.search( workId,  phone,  name,  salary,  username);
+    }
+
+
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
